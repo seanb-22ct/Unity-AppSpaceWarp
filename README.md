@@ -1,7 +1,27 @@
 # App SpaceWarp - GPU Hang Example
 
+This project has been forked to isolate a GPU hang with Vulkan and URP.
+
 ![](./Media/oh-no.gif)
 
+To reproduce:
+1. `git clone` this repository
+2. Open in `Unity-AppSpaceWarp` Unity
+3. Build with `GPUHang` scene
+4. Install and launch on Quest 2 hardware
+5. GPU hang should occur at 3 second mark (when the mesh renderer on the second cube is enabled)
+
+The gpu hang appears to be an issue when rendering with two or more shaders with these parameters:
+- Shader 1
+    - Has a `clip` or `discard` in the fragment function
+    - ZWrite is enabled (`ZWrite On`)
+- Shader 2
+    - Also has a `clip` or `discard` in the fragment function
+    - ZWrite is disabled (`ZWrite Off`)
+
+**Note:** If both shaders are set to `ZWrite On` then the bug does not occur.
+
+**Note** All assets used to isolate this bug are found under the `_GPUHang` folder.
 
 ## App SpaceWarp
 
