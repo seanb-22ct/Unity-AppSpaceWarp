@@ -1,4 +1,9 @@
-# App SpaceWarp
+# App SpaceWarp - GPU Hang Example
+
+![](./Media/oh-no.gif)
+
+
+## App SpaceWarp
 
 The App SpaceWarp demo for Unity was built to demonstrate how developers can consume [Unity's Application SpaceWarp API](https://developer.oculus.com/documentation/unity/unity-asw/), and how to diagnose and fix common issues with ASW-enabled apps.
 
