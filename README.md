@@ -21,7 +21,10 @@ The gpu hang appears to be an issue when rendering with two or more shaders with
 
 **Note:** If both shaders are set to `ZWrite On` then the bug does not occur.
 
-**Note** All assets used to isolate this bug are found under the `_GPUHang` folder.
+**Note:** All assets used to isolate this bug are found under the `_GPUHang` folder.
+In particular, the shaders in question are found here:
+- `Assets/_GPUHang/Shaders/MyTestShader1.shader`
+- `Assets/_GPUHang/Shaders/MyTestShader2.shader`
 
 ## App SpaceWarp
 
