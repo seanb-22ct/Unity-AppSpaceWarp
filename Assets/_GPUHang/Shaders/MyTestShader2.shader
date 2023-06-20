@@ -11,6 +11,7 @@ Shader "Unlit/MyTestShader2"
         LOD 100
 
         // Note: Settting ZWrite to On will "fix" the GPU hang
+        // You can also leave this as Off and set MyTestShader1 to ZWrite Off to make the hang go away.
         ZWrite Off
 
         Pass
