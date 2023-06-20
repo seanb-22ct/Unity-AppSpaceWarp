@@ -19,7 +19,7 @@ The gpu hang appears to be an issue when rendering with two or more shaders with
     - Also has a `clip` or `discard` in the fragment function
     - ZWrite is disabled (`ZWrite Off`)
 
-**Note:** If both shaders are set to `ZWrite On` then the bug does not occur.
+**Note:** If **both** shaders are set to `ZWrite On` or `ZWrite Off` then the bug does not occur.
 
 **Note:** All assets used to isolate this bug are found under the `_GPUHang` folder.
 In particular, the shaders in question are found here:
