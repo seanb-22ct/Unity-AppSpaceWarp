@@ -41,11 +41,13 @@ public class CameraOrbit : MonoBehaviour
         // Make sure the camera's orbit radius is reset
         m_Camera.transform.position = m_FocusGameObject.transform.position + m_Radius * -m_Camera.transform.forward;
 
-        m_SpaceWarpTimer += Time.deltaTime;
+        /*
+        m_SpaceWarpTimer += Time.deltaTime; // for testing
         if (m_SpaceWarpTimer >= MaxTime)
         {
             m_SpaceWarpTimer = 0.0f;
             OVRManager.SetSpaceWarp(!OVRManager.GetSpaceWarp());
         }
+        */
     }
 }
