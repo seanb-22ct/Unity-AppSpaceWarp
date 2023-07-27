@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Unity-AppSpaceWarp.unity
     guid: 543ca0bb6d5b1e447998eaae74872075
-  - enabled: 1
+  - enabled: 0
     path: Assets/_GPUHang/Scenes/GPUHang.unity
     guid: 5cf2a4b8c6ecb8148b51ea57c9f6a2ad
+  - enabled: 1
+    path: Assets/_RenderScale/Scenes/testing-render-scale.unity
+    guid: 94088cd35212add4b96efa0651ee8ae3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5cef906b323d9eb43a100ddc35b717cf, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2cb06edbf8b9d36458f28b3b827093bc, type: 2}
